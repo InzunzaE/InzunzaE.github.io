@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios en html</title>
+</head>
+<body>
+    <h1>Formulario de registro de alumno</h1> <hr>
+    <label for="nombre">nombre:</label>
+    <input type="text" name="" required>
+
+    <label for="Edad">Edad</label>
+    <input type="number"  placeholder="Teclea la edad" required> <br><br>
+
+    <label for="Fecha_nacimiento">Fecha de nacimiento</label>
+    <input type="date" required > <br><br>
+
+    <input type="radio" name="sexo" required >Femenino
+    <input type="radio" name="sexo" required >Masculino <br><br>
+
+    <label for="direccion">Direccion</label><br>
+    <textarea name="direccion" id="" cols="30" rows="10" placeholder="Teclea direccion" ></textarea>
+    <br><br>
+
+    <label for="escuela">Escuela</label>
+    <select name="escuela" id="">
+        <option value="">Selecciona una escuela</option>
+        <option value="cetis">Cetis 107</option>
+        <option value="cbetis">cbtis 224</option>
+        <option value="otra">otra</option>
+    </select> <br> <br>
+
+    <label for="materias">Materias cursadas:</label><br>
+    <input type="checkbox" name="materias[]" >Fisica <br>
+    <input type="checkbox" name="materias[]" >Calculo diferencial <br>
+    <input type="checkbox" name="materias[]" >Ingles <br>
+    <input type="checkbox" name="materias[]" >Programacion web <br><br>
+
+    <label for="color">color preferido:</label>
+    <input type="color"required > <br><br>
+
+    <label for="imagen_perfil"> <b>Imagen de perfil</b></label> <br>
+    <input type="file" accept="png/jpg" ><br> <br>
+
+    <input type="submit" value="Guardar alumno" ><br><br><br>
+</body>
+</html>
