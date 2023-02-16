@@ -3,20 +3,52 @@
 <head>
     <meta charset="UTF-8">                                                          
     <title>Navegacion</title>
+
+    <style>
+        .menu {
+            background-color: #428af5;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        
+        .menu:hover{
+                background-color: #074bb0;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contenido {
+            border: 1px solid black ;
+            border-radius: 10px;
+            margin-top: 15px;
+            padding: 15px;
+        }
+
+</style>
+
 </head>
 <body>
         <h1>Navegacion de html</h1>
             <h3>Pagina de inicio</h3>
-                <div style="border: 1px solid black; " >
-                    <div style="border-bottom: 1px solid black; padding: 10px; " >
+                <div style="border-radius: 10px; " >
+                    <div style="border: 1px solid black; padding: 10px;" class="menu" >
                          <a href="Practica6_noticias.html"> Noticias</a> 
                 </div>
-                <div style="border-bottom: 1px solid black; padding: 10px; " >
+                <div style="border: 1px solid black; padding: 10px;" class="menu" >
                         <a href="practica6_galeria.html">Galeria</a>
                 </div>       
-                <div style="border-bottom: 1px solid black; padding: 10px; " >    
+                <div style="border: 1px solid black; padding: 10px;" class="menu" >    
                       <a href="practica6_contacto.html">Contacto</a>
                     </div> 
+                </div>
+
+                <div class="contenido" >
+                    <h3>Bienvenido a mi Pagina</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor fugit officiis vero est quia dolore? Placeat provident porro eos incidunt obcaecati cumque commodi molestiae eveniet corrupti quo. Non, iusto nostrum!</p>
                 </div>
 </body>
 </html>
