@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9. Menú en bootstrap </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #3f9b7f;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Holaa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Casa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Pica aqui
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">opcion one</a></li>
+                  <li><a class="dropdown-item" href="#">otra opcion</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ALgo masssss</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Nothing hereeeee</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Picale</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-4 ">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <h5 class="card-header">Titulito</h5>
+                    <div class="card-body">
+                      <h5 class="card-title">BIENVENIDO a mi pagina!!</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloremque nobis modi! Inventore, facilis? Ipsam impedit nihil unde tenetur, quia quas exercitationem dolorum itaque magnam ab facilis perferendis dignissimos aperiam?.</p>
+                      <a href="#" class="btn btn-primary">Mas info</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+      <footer class="fixed-bottom text-center p-2 card ">
+            My page &copy; 2023
+      </footer>
+
+    <script src="js/jquery-3.6.3.js"></script>    
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
