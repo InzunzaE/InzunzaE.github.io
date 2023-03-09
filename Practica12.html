@@ -9,6 +9,42 @@
 </head>
 <body>
      <div class="container">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
         <div class="row">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -18,13 +54,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="imagenes/cel.jpg" class="d-block w-100" alt="...">
+                <img src="cel.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="imagenes/ropa.jpg" class="d-block w-100" alt="...">
+                <img src="ropa.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="imagenes/mueble.jpg" class="d-block w-100" alt="...">
+                <img src="mueble.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -37,6 +73,53 @@
             </button>
           </div>
      </div>
+     <div class="row mt-2">
+      <h2>Galeria de productos</h2>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="amazon.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Electronics Galaxy Note 20</h5>
+            <p class="card-text">Samsung Electronics Galaxy Note 20 Ultra 5G Teléfono celular Android desbloqueado de fábrica, Versión de Estados Unidos, 128 GB de almacenamiento, Mystic Black</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+      </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="sandalias.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sandalias Caribeñas Akumal </h5>
+            <p class="card-text">Sandalia Mujer Resistente Agua │ Playa Casual Urbano │ Estilo 2 Tiras</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="soporte.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TECHVIDA Mesa Laptop</h5>
+            <p class="card-text">TECHVIDA Mesa Laptop, Bastidor de Enfriamiento para Computadora Portátil, Soporte de Aluminio Ajustable Portátil, Portátil Universal, Adecuado para Sofás, Camas, etc, Diseño Ergonómico (Negro)</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+      </div>
+      </div>
+      
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="reloj.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SEcho Wall Clock </h5>
+            <p class="card-text">Consulta los timers de un vistazo - Requiere un dispositivo Echo compatible</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+      </div>
+      </div>
+    
+    
+    </div>
      <script src="js/jquery-3.6.3.js"></script>
      <script src="js/bootstrap.js"></script>
 </body>
