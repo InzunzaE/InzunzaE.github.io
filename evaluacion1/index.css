@@ -1,0 +1,51 @@
+
+body {
+  background-color: rgb(110, 186, 221)   !important;
+}
+
+.formulario {
+  padding: 30px;
+}
+
+#titu {
+  border: 3px outset white  ;
+  border-radius: 20px;
+}
+#titu:hover {
+  border: 5px outset black;
+  box-shadow: 10px 10px 14px 2px #3f9b7f;
+
+}
+
+h3 {
+  display: inline-block;
+  border: 1px black dashed  ;
+}
+
+h3:hover {
+  transition: 1s ease-in-out;
+  font-size: 40px;
+border: none;
+color: red;
+}
+
+
+.name:hover{
+  color: blue;
+  font-size: 40px;
+  transition: 1s ease;
+  box-shadow: 10px 10px 14px 2px #9b543f;
+}
+
+img {
+ width: 500px;
+ border: 5px dashed black;
+ margin: 10px;
+ opacity: 0.5;
+ transition: 1s ease-in-out;
+}
+
+img:hover {
+  opacity: 1;
+  rotate: 360deg;
+}
