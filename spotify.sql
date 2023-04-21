@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-04-2023 a las 04:15:27
+-- Tiempo de generación: 21-04-2023 a las 04:17:49
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -117,6 +117,28 @@ CREATE TABLE `canciones` (
   `disponible` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `canciones`
+--
+
+INSERT INTO `canciones` (`id`, `nombre`, `artista_id`, `duracion`, `genero_id`, `fecha`, `disponible`) VALUES
+(1, 'its a vibe', 2, '03:40:00', 13, '2021-04-12', 1),
+(2, 'Hello', 10, '00:06:28', 1, '2015-04-09', 1),
+(3, 'I wanna be yours', 13, '03:00:00', 2, '2020-04-08', 1),
+(4, 'amorfoda', 6, '02:10:00', 13, '2020-02-12', 1),
+(5, 'cuff it', 9, '04:12:00', 2, '2022-08-18', 1),
+(6, 'bad guy', 7, '02:34:00', 4, '2021-04-14', 1),
+(7, 'After house', 3, '02:50:00', 6, '2018-04-13', 1),
+(8, 'la gatita', 15, '03:01:00', 7, '2019-07-12', 1),
+(9, 'Botella tras botella', 16, '02:39:00', 8, '2021-04-30', 1),
+(10, 'Like you do', 11, '02:02:00', 5, '2020-11-11', 1),
+(11, 'summertime sadness', 14, '03:14:00', 2, '2021-11-25', 1),
+(12, 'Milagrosa', 5, '02:12:00', 10, '2021-02-19', 1),
+(13, 'AMG', 1, '02:10:00', 9, '2022-08-18', 1),
+(14, 'sexual eruptions', 17, '03:43:00', 3, '2014-04-09', 1),
+(15, 'Te quiero asi', 8, '03:37:00', 11, '2014-04-08', 1),
+(16, 'full ice', 4, '02:25:00', 13, '2020-09-17', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -194,6 +216,17 @@ CREATE TABLE `playlist` (
   `usuario_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `playlist`
+--
+
+INSERT INTO `playlist` (`id`, `nombre`, `imagen`, `usuario_id`) VALUES
+(3, 'chill', 'nodal.jpg', 1),
+(4, 'rockkk', 'duki.jpg', 2),
+(5, 'nada', 'valentin.jpg', 3),
+(6, 'amor', 'lana.jpg', 4),
+(7, 'aburrido', 'cro.jpg', 5);
+
 -- --------------------------------------------------------
 
 --
@@ -221,6 +254,17 @@ CREATE TABLE `usuarios` (
   `telefono` varchar(10) NOT NULL,
   `membresia_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `contrasena`, `usuario`, `telefono`, `membresia_id`) VALUES
+(1, 'Adrian chavez', 'adrain@gmail.com', 'eitan1234', 'gayuser', '66729392', 1),
+(2, 'Eitan Inzunza', 'eitan@gmail.com', 'eitan1234567', 'kidroto', '6673249331', 3),
+(3, 'fransisco madrid', 'boynas@gmail.com', 'boynazzzz', 'wero20', '667352594', 4),
+(4, 'Alexia armenta', 'alexia@gmail.com', 'lanadelrey123', 'aleee', '667392398', 2),
+(5, 'hommey ochoa', 'ochoa@gmail.com', 'hommiii22', 'homei', '674545353', 1);
 
 --
 -- Índices para tablas volcadas
@@ -324,7 +368,7 @@ ALTER TABLE `artistas`
 -- AUTO_INCREMENT de la tabla `canciones`
 --
 ALTER TABLE `canciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `favoritas`
@@ -348,7 +392,7 @@ ALTER TABLE `membresia`
 -- AUTO_INCREMENT de la tabla `playlist`
 --
 ALTER TABLE `playlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `playlist_canciones`
@@ -360,7 +404,7 @@ ALTER TABLE `playlist_canciones`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
@@ -393,6 +437,12 @@ ALTER TABLE `favoritas`
   ADD CONSTRAINT `favoritas_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`),
   ADD CONSTRAINT `favoritas_ibfk_2` FOREIGN KEY (`cancion_id`) REFERENCES `canciones` (`id`),
   ADD CONSTRAINT `favoritas_ibfk_3` FOREIGN KEY (`cancion_id`) REFERENCES `playlist_canciones` (`id`);
+
+--
+-- Filtros para la tabla `playlist`
+--
+ALTER TABLE `playlist`
+  ADD CONSTRAINT `playlist_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`);
 
 --
 -- Filtros para la tabla `playlist_canciones`
