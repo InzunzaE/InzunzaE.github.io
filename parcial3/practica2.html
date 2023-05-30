@@ -10,18 +10,18 @@
 <body>
    <div class="container">
     <h1>Registro de alumno</h1>
-    <form action="">
+    <form action="practica2.php" method="GET">
         <div class="form-group">
             <label for="">Nombre:</label>
-            <input type="text" name="nombre" class="form-control">
+            <input type="text" name="nombre" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="">edad:</label>
-            <input type="number" name="edad" class="form-control">
+            <input type="number" name="edad" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="">Escuela</label>
-            <select name="escuela" class="form-control">
+            <select name="escuela" class="form-control" required>
                 <option value="">selecciona una escuela</option>
                 <option value="Cetis 107">Cetis 107</option>
                 <option value="Cbtis 224">Cbtis 224</option>
@@ -30,11 +30,11 @@
         </div> <br>
         <div class="form-group">
             <label for="">fecha de ingreso:</label>
-            <input type="date" name="fecha_ingreso" class="form-control">
+            <input type="date" name="fecha_ingreso" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="">Direccion:</label>
-            <textarea name="Direccion" cols="30" rows="4" class="form-control"></textarea>
+            <textarea name="Direccion" cols="30" rows="4" class="form-control" required></textarea>
         </div><br>
         <div>
             <input type="submit" class="btn btn-primary">
