@@ -14,6 +14,8 @@
     $pregunta9 = $_POST["pregunta9"];
     $pregunta10 = $_POST["pregunta10"];
 
+    echo  "<h1>Hecho por:" .$nombre. "</h1> <hr>";
+
     echo "<h3>Pregunta 1: (".$pregunta1.")</h3>";
 
     if($pregunta1 == "b"){
