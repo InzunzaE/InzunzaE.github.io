@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+    border:5px  DASHED blue ;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+}   
+    img {
+        border: 8px dashed green;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+body {
+    background-color: 		#ffee9b;
+}
+

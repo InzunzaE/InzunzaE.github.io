@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de datos</title>
+</head>
+<body>
+    <p>
+        4AVP Inzunza Becerra Eitan Misael
+        P2021AVP014 Tipos de datos
+        eitan.inzunza21@cetis107.edu.mx 
+        31/05/2023
+    </p>
+
+    <h1>Tipos de datos</h1>
+
+    <script>
+        var bool = false;
+        document.write(bool + "<br>");   
+        var nul = null;
+        document.write(nul + "<br>");
+        function test(t) {
+            if (t === undefined) {
+                return 'Valor indefinido!';
+            }	
+            return t;
+        }
+        let x;
+        document.write(test(x) + "<br>");
+        var num = 210;
+        document.write(num + "<br>");
+        var y = 3 ** 200;
+        document.write(y + "<br>");
+        var cadena = "soy";
+        var cadena2 = "cadena";
+        document.write(cadena + "<br>");
+        let sim = Symbol("hello");
+        let sim1 = Symbol("hola");
+        document.write(sim == sim1);
+        document.write("<br>");
+        let obj = new Date("2006-05-14");
+        document.write(obj + "<br>");
+        function frase(a, b){
+            return a + " " + b;
+        }
+        let pollos = frase(cadena, cadena2);
+        document.write(pollos + "<br>");
+        
+
+    </script>
+</body>
+</html>

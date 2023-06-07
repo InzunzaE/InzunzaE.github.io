@@ -1,0 +1,51 @@
+body {
+    background-color: cornsilk;
+}
+
+header {
+    font-size: 30px;
+}
+
+h2{
+    color: red;
+}
+
+h2:hover{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+li{
+    padding: 10px;
+}
+
+img {
+    width: 300px;
+    padding: 10px;
+}
+
+table {
+    margin: 50px;
+    table-layout: auto; width: 30%;
+    border: solid black 5px;
+}
+
+thead{
+    font-size: 20px;
+}
+
+tr{
+    border: solid black 5px;
+}
+td{
+    border: solid red 2px;
+}
+
+tbody {
+  border: solid red 1px;
+  }
+
+ 

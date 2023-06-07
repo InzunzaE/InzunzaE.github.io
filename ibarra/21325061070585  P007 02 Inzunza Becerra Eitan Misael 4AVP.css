@@ -1,0 +1,21 @@
+h1:hover {
+    background-color: blue;
+    border-radius: 20px;
+}
+h2:hover {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+
+}
+h3:hover {
+box-shadow: 10px 10px 14px 2px orange;
+}
+
+h4:hover {
+font-size: 28px;
+}
+
+h5:hover{
+    padding: 30px;
+}

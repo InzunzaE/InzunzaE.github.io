@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo de uso de un sprite</title>
+	<meta name="author" content="francesc ricart"/>
+	<style>
+		div{
+			width:200px;
+			height:200px;
+			background-image:url('sprite.jpg');
+			background-repeat:no-repeat;
+			display:inline-block;
+			border:1px solid red;
+		}
+		.imagen-1{
+			background-position:0% 0%;
+		}
+		.imagen-2{
+			background-position:50% 0%;
+		}
+		.imagen-3{
+			background-position:100% 0%;
+		}
+
+		.imagen-4{
+			background-position:0% 50%;
+		}
+		.imagen-5{
+			background-position:50% 50%;
+		}
+		.imagen-6{
+			background-position:100% 50%;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="imagen-1"></div>
+	<div class="imagen-2"></div>
+	<div class="imagen-3"></div>
+    <br>
+    <div class="imagen-4"></div>
+	<div class="imagen-5"></div>
+	<div class="imagen-6"></div>
+</body>
+</html>
