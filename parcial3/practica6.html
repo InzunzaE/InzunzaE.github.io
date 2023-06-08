@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Juego</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Configurar juego</h1><hr>
+            <form action="practica6.php" method="POST">
+                <div class="form-group">
+                    <label for="">Nombre del jugador</label>
+                    <input type="text" required name="jugador" class="form-control" value="Eitan" >
+                </div><br>
+                <div class="form-group">
+                    <label for="">Palabra</label>
+                    <input type="text" required name="palabra" class="form-control" value="Hola" >
+                </div><br>
+                <div class="form-group">
+                    <label for=""># vidas</label>
+                    <input type="number" required name="vidas" class="form-control" value="5" >
+                </div><br>
+                <div>
+                    <input type="submit" class="btn btn-primary" >
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
