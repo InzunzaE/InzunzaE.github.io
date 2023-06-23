@@ -25,9 +25,8 @@
                     $carta1 = $_POST["carta1"];
                     $carta2 = $_POST["carta2"];
                     $carta = rand(1,54);
+                    echo "<h2>Carta dada <img src='fotos_loteria/".$carta.".jpeg' class='img-fluid' width='50px'></h2>";
                     
-                    $cartas_dadas = [];
-                    array_push($cartas_dadas, $carta);
                 } else {
                     $carta1= [];
                     $total = 0; 
@@ -56,12 +55,10 @@
                     <?php
                     //Pintar carta 1
                     for($i= 0; $i<16; $i++){
-                        if(array_search($carta1[$i], $cartas_dadas === false)) {
-                            echo " <div class='col-3 p-0'><img src='fotos_loteria/".$carta1[$i].".jpeg' class='img-thumbnail' ></div>";
-                        } else { 
+                        echo " <div class='col-3 p-0'><img src='fotos_loteria/".$carta1[$i].".jpeg' class='img-thumbnail' ></div>";
                         echo "<input type='hidden' name='carta1[]' value='".$carta1[$i]."'>";
                     } 
-                }
+                
                     ?>
                     </div>
                     </div>
@@ -71,11 +68,11 @@
                     <?php
                     //Pintar carta 1
                     for($i= 0; $i<16; $i++){
-                        if(array_search($carta1[$i], $cartas_dadas === false)) {
+                        
                         echo " <div class='col-3 p-0'><img src='fotos_loteria/".$carta2[$i].".jpeg' class='img-thumbnail' ></div>"; 
                        
-                    } else { echo "<input type='hidden' name='carta2[]' value='".$carta2[$i] ."'>"; 
-                    }
+                     echo "<input type='hidden' name='carta2[]' value='".$carta2[$i] ."'>"; 
+                    
                 }
                     ?>
                     </div>
